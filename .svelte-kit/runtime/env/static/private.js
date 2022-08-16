@@ -74,6 +74,9 @@ export const MIC_LD_LIBRARY_PATH = "C:\\Program Files (x86)\\Common Files\\Intel
 /** @type {import('$env/static/private').NODE} */
 export const NODE = "E:\\node\\node.exe";
 
+/** @type {import('$env/static/private').NODE_ENV} */
+export const NODE_ENV = "production";
+
 /** @type {import('$env/static/private').NODE_EXE} */
 export const NODE_EXE = "E:\\node\\\\node.exe";
 
@@ -120,10 +123,10 @@ export const npm_config_user_agent = "npm/8.3.0 node/v16.15.1 win32 x64 workspac
 export const npm_execpath = "C:\\Users\\Usuario\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js";
 
 /** @type {import('$env/static/private').npm_lifecycle_event} */
-export const npm_lifecycle_event = "dev";
+export const npm_lifecycle_event = "build";
 
 /** @type {import('$env/static/private').npm_lifecycle_script} */
-export const npm_lifecycle_script = "vite dev";
+export const npm_lifecycle_script = "vite build";
 
 /** @type {import('$env/static/private').npm_node_execpath} */
 export const npm_node_execpath = "E:\\node\\node.exe";

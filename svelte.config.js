@@ -4,9 +4,14 @@ import adapter from '@sveltejs/adapter-static';
 const config = {
   kit: {
     paths: {
-      base: ""
+      base: "/test/qr-code-svelte/build",
     },
-    adapter: adapter(),
+    adapter: adapter({
+      // pages: './build',
+      // assets: './build',
+      fallback: 'index.html',
+      precompress: false
+    }),
     appDir: '_app'
   },
   preprocess: [

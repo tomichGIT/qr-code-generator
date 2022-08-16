@@ -97,7 +97,7 @@ form.addEventListener('submit', onGenerateSubmit);
     <div class="text-xl font-bold text-white">QR Code Generator</div>
   </div>
 </header>
-<img src="/img/spinner.svg" alt="" />
+<img src="build/img/spinner.svg" alt="" />
 
 <main>
 
@@ -144,7 +144,7 @@ form.addEventListener('submit', onGenerateSubmit);
     </form>
   </div>
   <div class="w-full md:w-1/3 self-center">
-    <img  class="w-1/2 m-auto mb-10 md:w-full" src="/img/qr-code.svg" alt=""  />
+    <img  class="w-1/2 m-auto mb-10 md:w-full" src="build/img/qr-code.svg" alt=""  />
   </div>
 </div>
 
