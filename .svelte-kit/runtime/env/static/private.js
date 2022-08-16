@@ -74,9 +74,6 @@ export const MIC_LD_LIBRARY_PATH = "C:\\Program Files (x86)\\Common Files\\Intel
 /** @type {import('$env/static/private').NODE} */
 export const NODE = "E:\\node\\node.exe";
 
-/** @type {import('$env/static/private').NODE_ENV} */
-export const NODE_ENV = "production";
-
 /** @type {import('$env/static/private').NODE_EXE} */
 export const NODE_EXE = "E:\\node\\\\node.exe";
 
@@ -123,10 +120,10 @@ export const npm_config_user_agent = "npm/8.3.0 node/v16.15.1 win32 x64 workspac
 export const npm_execpath = "C:\\Users\\Usuario\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js";
 
 /** @type {import('$env/static/private').npm_lifecycle_event} */
-export const npm_lifecycle_event = "build";
+export const npm_lifecycle_event = "dev";
 
 /** @type {import('$env/static/private').npm_lifecycle_script} */
-export const npm_lifecycle_script = "vite build";
+export const npm_lifecycle_script = "vite dev";
 
 /** @type {import('$env/static/private').npm_node_execpath} */
 export const npm_node_execpath = "E:\\node\\node.exe";
@@ -233,6 +230,9 @@ export const USERPROFILE = "C:\\Users\\Usuario";
 /** @type {import('$env/static/private').VBOX_MSI_INSTALL_PATH} */
 export const VBOX_MSI_INSTALL_PATH = "E:\\Program Files\\Oracle\\VirtualBox\\";
 
+/** @type {import('$env/static/private').VITE_USER_NODE_ENV} */
+export const VITE_USER_NODE_ENV = "development";
+
 /** @type {import('$env/static/private').VSCODE_GIT_ASKPASS_EXTRA_ARGS} */
 export const VSCODE_GIT_ASKPASS_EXTRA_ARGS = "--ms-enable-electron-run-as-node";
 
@@ -250,3 +250,6 @@ export const windir = "C:\\Windows";
 
 /** @type {import('$env/static/private').ZES_ENABLE_SYSMAN} */
 export const ZES_ENABLE_SYSMAN = "1";
+
+/** @type {import('$env/static/private').NODE_ENV} */
+export const NODE_ENV = "development";

@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build_lan": "set NODE_ENV=apache&&vite build --mode apache",
+    "build": "set NODE_ENV=production&&vite build",
     "preview": "vite preview"
   },
   "devDependencies": {

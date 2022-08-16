@@ -1,11 +1,6 @@
 <script>
 import { onMount } from "svelte/internal";
-
-onMount ( () => {
-  console.log("+page");
-
-  const form = document.getElementById('generate-form');
-const qr = document.getElementById('qrcode');
+import { page } from "$app/stores";
 
 // Button submit
 const onGenerateSubmit = (e) => {
@@ -36,7 +31,6 @@ const onGenerateSubmit = (e) => {
     }, 1000);
   }
 };
-
 // Generate QR code
 const generateQRCode = (url, size) => {
   const qrcode = new QRCode('qrcode', {
@@ -45,7 +39,6 @@ const generateQRCode = (url, size) => {
     height: size,
   });
 };
-
 // Clear QR code and save button
 const clearUI = () => {
   qr.innerHTML = '';
@@ -54,19 +47,16 @@ const clearUI = () => {
     saveBtn.remove();
   }
 };
-
 // Show spinner
 const showSpinner = () => {
   const spinner = document.getElementById('spinner');
   spinner.style.display = 'block';
 };
-
 // Hide spinner
 const hideSpinner = () => {
   const spinner = document.getElementById('spinner');
   spinner.style.display = 'none';
 };
-
 // Create save button to download QR code as image
 const createSaveBtn = (saveUrl) => {
   const link = document.createElement('a');
@@ -79,15 +69,20 @@ const createSaveBtn = (saveUrl) => {
   document.getElementById('generated').appendChild(link);
 };
 
-hideSpinner();
+//const basePath= $page.url.pathname; // /test/qr-code-svelte/build
+let basePath= $page.url.origin+$page.url.pathname; // http://localhost/test/qr-code-svelte/build
 
-form.addEventListener('submit', onGenerateSubmit);
+// si no tiene barra se la agrego (varía dependiendo si estoy en dev, o en apache)
+const last = basePath.charAt(basePath.length - 1);
+if(last != '/') { basePath = basePath+'/'; } 
 
-
-} );
-
-
-
+onMount ( () => {
+  console.log("+page", $page.url);
+  const form = document.getElementById('generate-form');
+  const qr = document.getElementById('qrcode');
+  hideSpinner();
+  form.addEventListener('submit', onGenerateSubmit);
+});
 
 </script>
 
@@ -97,7 +92,7 @@ form.addEventListener('submit', onGenerateSubmit);
     <div class="text-xl font-bold text-white">QR Code Generator</div>
   </div>
 </header>
-<img src="build/img/spinner.svg" alt="" />
+<img src="{basePath}img/spinner.svg" alt="" />
 
 <main>
 
@@ -144,7 +139,7 @@ form.addEventListener('submit', onGenerateSubmit);
     </form>
   </div>
   <div class="w-full md:w-1/3 self-center">
-    <img  class="w-1/2 m-auto mb-10 md:w-full" src="build/img/qr-code.svg" alt=""  />
+    <img  class="w-1/2 m-auto mb-10 md:w-full" src="{basePath}img/qr-code.svg" alt=""  />
   </div>
 </div>
 
