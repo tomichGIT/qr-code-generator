@@ -54,7 +54,7 @@ export const HOMEDRIVE = "C:";
 export const HOMEPATH = "\\Users\\Usuario";
 
 /** @type {import('$env/static/private').INIT_CWD} */
-export const INIT_CWD = "E:\\xampp\\htdocs\\test\\qr-code-svelte";
+export const INIT_CWD = "E:\\xampp\\htdocs\\test\\sveltekit\\qr-code-svelte";
 
 /** @type {import('$env/static/private').INTEL_DEV_REDIST} */
 export const INTEL_DEV_REDIST = "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\";
@@ -96,7 +96,7 @@ export const npm_config_global_prefix = "C:\\Users\\Usuario\\AppData\\Roaming\\n
 export const npm_config_init_module = "C:\\Users\\Usuario\\.npm-init.js";
 
 /** @type {import('$env/static/private').npm_config_local_prefix} */
-export const npm_config_local_prefix = "E:\\xampp\\htdocs\\test\\qr-code-svelte";
+export const npm_config_local_prefix = "E:\\xampp\\htdocs\\test\\sveltekit\\qr-code-svelte";
 
 /** @type {import('$env/static/private').npm_config_metrics_registry} */
 export const npm_config_metrics_registry = "https://registry.npmjs.org/";
@@ -129,7 +129,7 @@ export const npm_lifecycle_script = "vite dev";
 export const npm_node_execpath = "E:\\node\\node.exe";
 
 /** @type {import('$env/static/private').npm_package_json} */
-export const npm_package_json = "E:\\xampp\\htdocs\\test\\qr-code-svelte\\package.json";
+export const npm_package_json = "E:\\xampp\\htdocs\\test\\sveltekit\\qr-code-svelte\\package.json";
 
 /** @type {import('$env/static/private').npm_package_name} */
 export const npm_package_name = "qr-code-svelte";
@@ -159,7 +159,7 @@ export const ORIGINAL_XDG_CURRENT_DESKTOP = "undefined";
 export const OS = "Windows_NT";
 
 /** @type {import('$env/static/private').Path} */
-export const Path = "E:\\xampp\\htdocs\\test\\qr-code-svelte\\node_modules\\.bin;E:\\xampp\\htdocs\\test\\node_modules\\.bin;E:\\xampp\\htdocs\\node_modules\\.bin;E:\\xampp\\node_modules\\.bin;E:\\node_modules\\.bin;C:\\Users\\Usuario\\AppData\\Roaming\\npm\\node_modules\\npm\\node_modules\\@npmcli\\run-script\\lib\\node-gyp-bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;E:\\Oculus\\Support\\oculus-runtime;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;e:\\Program Files\\Git\\cmd;E:\\Program Files\\PuTTY\\;E:\\Program Files\\Nueva carpeta\\OBSCommand;C:\\Program Files\\dotnet\\;E:\\node\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\java\\jdk18\\bin;;C:\\Program Files (x86)\\FFAIO\\bin;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\Usuario\\AppData\\Local\\Microsoft\\WindowsApps;;e:\\Users\\Usuario\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Usuario\\AppData\\Roaming\\npm;C:\\Users\\Usuario\\AppData\\Roaming\\Composer\\vendor\\bin";
+export const Path = "E:\\xampp\\htdocs\\test\\sveltekit\\qr-code-svelte\\node_modules\\.bin;E:\\xampp\\htdocs\\test\\sveltekit\\node_modules\\.bin;E:\\xampp\\htdocs\\test\\node_modules\\.bin;E:\\xampp\\htdocs\\node_modules\\.bin;E:\\xampp\\node_modules\\.bin;E:\\node_modules\\.bin;C:\\Users\\Usuario\\AppData\\Roaming\\npm\\node_modules\\npm\\node_modules\\@npmcli\\run-script\\lib\\node-gyp-bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;E:\\Oculus\\Support\\oculus-runtime;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;e:\\Program Files\\Git\\cmd;E:\\Program Files\\PuTTY\\;E:\\Program Files\\Nueva carpeta\\OBSCommand;C:\\Program Files\\dotnet\\;E:\\node\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\java\\jdk18\\bin;;C:\\Program Files (x86)\\FFAIO\\bin;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\Usuario\\AppData\\Local\\Microsoft\\WindowsApps;;e:\\Users\\Usuario\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Usuario\\AppData\\Roaming\\npm;C:\\Users\\Usuario\\AppData\\Roaming\\Composer\\vendor\\bin";
 
 /** @type {import('$env/static/private').PATHEXT} */
 export const PATHEXT = ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL";
@@ -243,7 +243,7 @@ export const VSCODE_GIT_ASKPASS_MAIN = "e:\\Users\\Usuario\\AppData\\Local\\Prog
 export const VSCODE_GIT_ASKPASS_NODE = "E:\\Users\\Usuario\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe";
 
 /** @type {import('$env/static/private').VSCODE_GIT_IPC_HANDLE} */
-export const VSCODE_GIT_IPC_HANDLE = "\\\\.\\pipe\\vscode-git-245de22614-sock";
+export const VSCODE_GIT_IPC_HANDLE = "\\\\.\\pipe\\vscode-git-cfccb40adb-sock";
 
 /** @type {import('$env/static/private').windir} */
 export const windir = "C:\\Windows";

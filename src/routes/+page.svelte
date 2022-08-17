@@ -2,6 +2,19 @@
 import { onMount } from "svelte/internal";
 import { page } from "$app/stores";
 
+let qr;
+
+onMount ( () => {
+  console.log("+page", $page.url);
+  const form = document.getElementById('generate-form');
+  qr = document.getElementById('qrcode');
+  hideSpinner();
+  form.addEventListener('submit', onGenerateSubmit);
+});
+
+
+
+
 // Button submit
 const onGenerateSubmit = (e) => {
   e.preventDefault();
@@ -75,14 +88,6 @@ let basePath= $page.url.origin+$page.url.pathname; // http://localhost/test/qr-c
 // si no tiene barra se la agrego (varía dependiendo si estoy en dev, o en apache)
 const last = basePath.charAt(basePath.length - 1);
 if(last != '/') { basePath = basePath+'/'; } 
-
-onMount ( () => {
-  console.log("+page", $page.url);
-  const form = document.getElementById('generate-form');
-  const qr = document.getElementById('qrcode');
-  hideSpinner();
-  form.addEventListener('submit', onGenerateSubmit);
-});
 
 </script>
 
